@@ -48,10 +48,16 @@ body.active{
     display: none;
 }
 .header .side-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
     position: fixed;
     top: 3.6rem;
     right: -70%;
-    width: 50%;
+    width: 60%;
     height: 100%;
     z-index: 9999;
 
@@ -59,6 +65,12 @@ body.active{
     background-color: #fff;
 
     transition: right .3s ease-in-out;
+}
+.header .side-nav a{
+    display: block;
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 .header .side-nav.active{
     right: 0;
