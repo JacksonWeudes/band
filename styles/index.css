@@ -19,7 +19,8 @@ body.active{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: .5rem 2rem;
+    height: 70px;
+    padding-inline: 2rem;
     z-index: 9999;
     border: 1px solid;
     background-color: #fff;
@@ -54,7 +55,7 @@ body.active{
     gap: 2rem;
 
     position: fixed;
-    top: 3.4rem;
+    top: 69px;
     right: -70%;
     width: 60%;
     height: 100%;
@@ -82,10 +83,32 @@ body.active{
     align-items: center;
     gap: 1rem;
     height: 100dvh;
+    text-align: center;
 }
 .main .hero h2{
     font-size: clamp(2.5rem, 4vw, 4.5rem);
 }
 .main .hero p{
     font-size: clamp(1.2rem, 2vw, 1.3rem);
+}
+
+.main .latest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 5rem 2rem;
+    border: 1px solid;
+}
+.main .latest .album-info h2{
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+.main .latest .album-info p{
+    padding-block: .5rem;
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
+}
+.main .latest .album-info button{
+    margin-top: 1rem;
 }
